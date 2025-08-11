@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Techy pay</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techy Pay - Learn Online Payment Apps Easily | Get Cashback</title>
+    <meta name="description" content="Learn how to use payment apps like Paytm step-by-step. Get cashback on your first transaction using our referral code. Easy tutorials for beginners.">
+    <meta name="keywords" content="paytm, online payment, cashback, referral code, digital payment tutorial, UPI tutorial">
+    <meta name="author" content="Techy Pay">
+    
+    <!-- SEO Enhancements -->
+    <link rel="canonical" href="https://techypay.com/learn-payment-apps">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techypay.com/learn-payment-apps">
+    <meta property="og:title" content="Techy Pay - Learn Online Payment Apps Easily | Get Cashback">
+    <meta property="og:description" content="Step-by-step tutorials for Paytm & UPI apps. Get ₹40-₹1000 cashback with referral code zprs999">
+    <meta property="og:image" content="https://i.ibb.co/CTJLVxy/11.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://techypay.com/learn-payment-apps">
+    <meta property="twitter:title" content="Techy Pay - Learn Online Payment Apps Easily | Get Cashback">
+    <meta property="twitter:description" content="Step-by-step tutorials for Paytm & UPI apps. Get ₹40-₹1000 cashback with referral code zprs999">
+    <meta property="twitter:image" content="https://i.ibb.co/CTJLVxy/11.png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💳</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💳</text></svg>">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use Payment Apps with Techy Pay",
+      "description": "Step-by-step guide to using Paytm and UPI payment apps with cashback offers",
+      "image": "https://i.ibb.co/CTJLVxy/11.png",
+      "totalTime": "PT15M",
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Smartphone"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Bank Account"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Download the Paytm app using the official link",
+          "image": "https://i.ibb.co/CTJLVxy/11.png",
+          "name": "Download App"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Enter referral code zprs999 during signup",
+          "image": "https://i.ibb.co/B2qKqGDf/1.png",
+          "name": "Apply Referral Code"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Complete your profile and add bank account",
+          "image": "https://i.ibb.co/HpFH6PgW/3.jpg",
+          "name": "Setup Account"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Make your first payment to get cashback",
+          "image": "https://i.ibb.co/d40bFZqB/8.jpg",
+          "name": "Make Payment"
+        }
+      ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #7c3aed;
+            --accent: #06b6d4;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+            --card-gradient: linear-gradient(145deg, #ffffff, #f0f4f8);
+            --cursor-size: 20px;
+            --cursor-trail-size: 40px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: none;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        
+        /* Custom Cursor */
+        .cursor {
+            position: fixed;
+            width: var(--cursor-size);
+            height: var(--cursor-size);
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: all 0.15s ease, width 0.3s ease, height 0.3s ease;
+            will-change: transform;
+        }
+        
+        .cursor-trail {
+            position: fixed;
+            width: var(--cursor-trail-size);
+            height: var(--cursor-trail-size);
+            border: 2px solid rgba(37, 99, 235, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            pointer-events: none;
+            z-index: 9998;
+            mix-blend-mode: difference;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            will-change: transform;
+        }
+        
+        .cursor.active {
+            width: calc(var(--cursor-size) * 1.5);
+            height: calc(var(--cursor-size) * 1.5);
+            background: rgba(37, 99, 235, 0.2);
+        }
+        
+        .cursor.click {
+            transform: translate(-50%, -50%) scale(0.8);
+            background: var(--primary);
+        }
+        
+        /* Header Styles */
+        header {
+            background: white;
+            box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.85);
+        }
+        
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.03);
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--secondary);
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover .logo-icon {
+            transform: rotate(10deg);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark);
+            cursor: none;
+            transition: transform 0.3s;
+        }
+        
+        .mobile-menu-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: floatText 8s ease-in-out infinite;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-size: 1.1rem;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+            z-index: -1;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button:hover::before {
+            transform: translateX(100%);
+        }
+        
+        .cta-button i {
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover i {
+            transform: translateY(3px);
+        }
+        
+        /* Tutorial Steps */
+        .tutorial-section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 1rem;
+            animation: pulseTitle 4s infinite alternate;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background: var(--gradient);
+            border-radius: 3px;
+            animation: linePulse 3s infinite;
+        }
+        
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        
+        .step {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            z-index: 1;
+            transform: perspective(1000px) rotateY(0deg);
+            transform-style: preserve-3d;
+        }
+        
+        .step:hover {
+            transform: translateY(-8px) perspective(1000px) rotateY(5deg);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--card-gradient);
+            z-index: -1;
+            border-radius: 16px;
+        }
+        
+        .step-image {
+            flex: 1;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+        
+        .step-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            transition: all 0.5s ease;
+            position: relative;
+            z-index: 2;
+            transform: translateZ(20px);
+        }
+        
+        .step-image:hover img {
+            transform: scale(1.03) translateZ(30px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .step-image::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+            z-index: 1;
+            animation: pulse 4s infinite alternate;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        
+        .step-image:hover::before {
+            opacity: 1;
+        }
+        
+        .step-content {
+            flex: 1;
+            padding: 2.5rem;
+        }
+        
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+            transition: transform 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+        
+        .step:hover .step-number {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .step-content h3 {
+            font-size: 1.7rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark);
+            transition: color 0.3s;
+        }
+        
+        .step:hover .step-content h3 {
+            color: var(--primary);
+        }
+        
+        .step-content p {
+            margin-bottom: 1.8rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        /* Animated Download Button */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: none;
+            cursor: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-size: 1.1rem;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, 0.5);
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+        }
+        
+        .download-btn:active {
+            transform: translateY(2px);
+        }
+        
+        .download-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: transform 0.6s ease;
+            z-index: -1;
+        }
+        
+        .download-btn:hover::before {
+            transform: translateX(100%);
+        }
+        
+        .download-btn i {
+            transition: transform 0.3s ease;
+        }
+        
+        .download-btn:hover i {
+            transform: translateY(3px);
+        }
+        
+        .pulse-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            animation: button-pulse 2s infinite;
+            opacity: 0;
+            z-index: -2;
+        }
+        
+        /* Cashback Highlight */
+        .cashback-highlight {
+            background: linear-gradient(to right, rgba(135, 206, 235, 0.2), rgba(37, 99, 235, 0.15));
+            color: var(--dark);
+            padding: 12px 16px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 15px 0;
+            border-left: 4px solid var(--primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cashback-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: transform 0.6s ease;
+            z-index: -1;
+        }
+        
+        .cashback-highlight:hover::before {
+            transform: translateX(100%);
+        }
+        
+        .step:hover .cashback-highlight {
+            background: linear-gradient(to right, rgba(135, 206, 235, 0.3), rgba(37, 99, 235, 0.25));
+            transform: translateX(5px);
+        }
+        
+        /* Referral Section */
+        .referral-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            margin: 5rem auto;
+            max-width: 1200px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+            transform: perspective(1000px) rotateX(0deg);
+            transition: transform 0.4s ease;
+        }
+        
+        .referral-section:hover {
+            transform: perspective(1000px) rotateX(5deg);
+        }
+        
+        .referral-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        .referral-section::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 18s infinite linear reverse;
+        }
+        
+        .referral-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .referral-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            animation: floatText 8s ease-in-out infinite;
+        }
+        
+        .referral-content p {
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .referral-code-container {
+            display: inline-block;
+            position: relative;
+            margin: 1.5rem 0;
+            perspective: 1000px;
+        }
+        
+        .referral-code {
+            background: white;
+            color: var(--primary);
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            border-radius: 12px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            cursor: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            font-family: monospace;
+            transform: translateZ(20px);
+            transition: transform 0.3s ease;
+        }
+        
+        .referral-code:hover {
+            transform: scale(1.05) translateZ(30px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .referral-code::after {
+            content: 'Click to Copy';
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        
+        .referral-code:hover::after {
+            opacity: 0.8;
+            bottom: -25px;
+        }
+        
+        .copied-message {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--success);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.3s, top 0.3s;
+            pointer-events: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .referral-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .referral-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .referral-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .offer-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--warning);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            transform: rotate(5deg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            animation: pulse 2s infinite, floatBadge 4s ease-in-out infinite;
+            z-index: 2;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #0f172a 100%);
+            color: white;
+            padding: 4rem 2rem 2rem;
+            position: relative;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1.8rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+            animation: linePulse 3s infinite;
+        }
+        
+        .footer-column p {
+            margin-bottom: 1.5rem;
+            opacity: 0.85;
+            line-height: 1.7;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        
+        .footer-column ul li:hover {
+            transform: translateX(5px);
+        }
+        
+        .footer-column ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #94a3b8;
+            font-size: 0.95rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            50% {
+                transform: translate(10px, 10px) rotate(180deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(37, 99, 235, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+            }
+        }
+        
+        @keyframes button-pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes floatText {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes floatBadge {
+            0%, 100% {
+                transform: rotate(5deg) translateY(0);
+            }
+            50% {
+                transform: rotate(5deg) translateY(-15px);
+            }
+        }
+        
+        @keyframes pulseTitle {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.02);
+            }
+        }
+        
+        @keyframes linePulse {
+            0% {
+                width: 100px;
+            }
+            50% {
+                width: 120px;
+            }
+            100% {
+                width: 100px;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .animate {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--success);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            font-weight: 500;
+            z-index: 1000;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+        
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+            
+            .step:nth-child(even) {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1.5rem;
+                box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .step-image, .step-content {
+                padding: 1.5rem;
+            }
+            
+            .referral-section::before, .referral-section::after {
+                display: none;
+            }
+            
+            .referral-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .referral-code {
+                font-size: 1.5rem;
+                padding: 1rem 2rem;
+            }
+            
+            /* Disable custom cursor on mobile */
+            * {
+                cursor: auto;
+            }
+            
+            .cursor, .cursor-trail {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 4rem 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .referral-section {
+                padding: 3rem 1.5rem;
+            }
+            
+            .referral-content h2 {
+                font-size: 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-wallet logo-icon"></i>
+                <span>Techy Pay</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#steps">Steps</a>
+                <a href="#referral">Download & Cashback</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content animate">
+            <h1>Learn Online Payments with Techy Pay</h1>
+            <p>Master payment apps step-by-step and get cashback on your first transaction! Easy tutorials for beginners and seniors.</p>
+            <a href="#steps" class="cta-button">
+                <i class="fas fa-play-circle"></i> Get Started
+            </a>
+        </div>
+    </section>
+
+    <!-- Tutorial Steps -->
+    <section class="tutorial-section" id="steps">
+        <div class="section-title animate">
+            <h2>How to Use Payment Apps</h2>
+            <p>Follow these simple steps to start using digital payment apps safely and efficiently</p>
+        </div>
+        
+        <div class="steps-container">
+            <!-- Step 1 -->
+            <div class="step animate">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/CTJLVxy/11.png" alt="Download Paytm App" class="paytm-animated-image">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">1</div>
+                    <h3>Download the Payment App</h3>
+                    <p>Start by downloading the payment app from the official link or the download button below. For the best experience, use our verified download link.</p>
+                    <div class="cashback-highlight">
+                        <i class="fas fa-gift"></i> Download from the button below and use referral code <strong>"zprs999"</strong> during signup to get ₹40–₹1000 cashback on your first payment! (Minimum payment ₹10). Make at least one payment per week for a month to qualify for the reward.
+                    </div>
+                    <div style="margin-top: 1.5em;">
+                        <a href="https://p.paytm.me/xCTH/huy9rlkt" target="_blank" class="download-btn">
+                            <i class="fas fa-download"></i> Download Now
+                            <span class="pulse-effect"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="step animate delay-1">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/B2qKqGDf/1.png" alt="Referral code button" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">2</div>
+                    <h3>Create Your Account</h3>
+                    <p>Open the app and look for the <strong>"Referral Code"</strong> button on the welcome screen. This is where you'll enter the special code to activate your cashback offer.</p>
+                </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="step animate delay-2">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/PGsxs562/2.png" alt="Enter referral code" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">3</div>
+                    <h3>Apply the Referral Code</h3>
+                    <p>Enter the referral code: <strong>"zprs999"</strong> (you can copy it below) and click Apply. Then sign up with your mobile number. Verify with OTP and complete your profile with your name and email.</p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step animate delay-3">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/HpFH6PgW/3.jpg" alt="Add bank account" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">4</div>
+                    <h3>Add Your Bank Account</h3>
+                    <p>Navigate to <strong>"Balance & History"</strong> and select <strong>"Add Accounts on UPI"</strong>. Ensure your SIM card with the registered mobile number is in slot 1.</p>
+                </div>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="step animate delay-1">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/0pPQtw9r/4.jpg" alt="Add accounts on UPI" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">5</div>
+                    <h3>Select Your Bank</h3>
+                    <p>After clicking <strong>"Add Accounts on UPI"</strong>, choose your bank from the list. Make sure it's the bank where you have an active account.</p>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="step animate delay-2">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/ZpHPSF2c/5.jpg" alt="Bank selection" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">6</div>
+                    <h3>Complete Setup</h3>
+                    <p>Follow the prompts to link your bank account. You'll need to set up a secure UPI PIN which will be required for all transactions.</p>
+                </div>
+            </div>
+            
+            <!-- Step 7 -->
+            <div class="step animate delay-3">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/B547bHRv/6.jpg" alt="Payment methods" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">7</div>
+                    <h3>Make Your First Payment</h3>
+                    <p>Choose from multiple payment methods: <strong>QR Code</strong>, <strong>Mobile Number</strong>, or <strong>Bank Transfer</strong>. Remember that self-payments don't qualify for rewards.</p>
+                </div>
+            </div>
+
+            <!-- Step 8 -->
+            <div class="step animate delay-1">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/pB7JTG61/7.jpg" alt="Scan QR code" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">8</div>
+                    <h3>Scan QR Code</h3>
+                    <p>Tap <strong>"Scan & Pay"</strong> and point your camera at the merchant's QR code. The app will automatically recognize the payment details.</p>
+                </div>
+            </div>
+
+            <!-- Step 9 -->
+            <div class="step animate delay-2">
+                <div class="step-image">
+                    <img src="https://i.ibb.co/d40bFZqB/8.jpg" alt="Confirm payment" class="hover-zoom">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">9</div>
+                    <h3>Confirm Payment</h3>
+                    <p>Enter the payment amount and tap <strong>"Pay Now"</strong>. Enter your UPI PIN when prompted to complete the transaction. Congratulations on your first cashback-eligible payment!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referral Section -->
+    <section class="referral-section" id="referral">
+        <div class="offer-badge">Limited Time Offer!</div>
+        <div class="referral-content">
+            <h2>Get Cashback on Your First Payment!</h2>
+            <p>Download the app using our link and enter referral code during signup to get ₹40–₹1000 cashback on your first payment (min ₹10). Make weekly payments for a month to maximize your rewards.</p>
+
+            <div class="referral-code-container">
+                <div class="referral-code" id="referralCode">zprs999</div>
+                <div class="copied-message">Copied!</div>
+            </div>
+            
+            <div style="margin-top: 1.9em;">
+                <a href="https://p.paytm.me/xCTH/huy9rlkt" target="_blank" class="download-btn">
+                    <i class="fas fa-download"></i> Download & Get Cashback
+                    <span class="pulse-effect"></span>
+                </a>
+            </div>
+            
+            <div class="referral-buttons">
+                <a href="#" class="referral-btn">
+                    <i class="fab fa-whatsapp"></i> Share on WhatsApp
+                </a>
+                <a href="#" class="referral-btn">
+                    <i class="fas fa-share-alt"></i> Share with Friends
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Techy Pay</h3>
+                <p>Making digital payments simple and rewarding for everyone. Learn, earn, and pay with confidence.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#steps"><i class="fas fa-chevron-right"></i> Tutorial</a></li>
+                    <li><a href="#referral"><i class="fas fa-chevron-right"></i> Cashback</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:techypay01@gmail.com"><i class="fas fa-envelope"></i> techypay01@gmail.com</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Gujarat, India</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2023 Techy Pay. All rights reserved. | Designed for Digital India
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Referral code copied to clipboard!</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Custom cursor
+            const cursor = document.createElement('div');
+            cursor.classList.add('cursor');
+            document.body.appendChild(cursor);
+            
+            const cursorTrail = document.createElement('div');
+            cursorTrail.classList.add('cursor-trail');
+            document.body.appendChild(cursorTrail);
+            
+            // Update cursor position
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+                
+                setTimeout(() => {
+                    cursorTrail.style.left = `${e.clientX}px`;
+                    cursorTrail.style.top = `${e.clientY}px`;
+                }, 100);
+            });
+            
+            // Active cursor state
+            document.querySelectorAll('a, button, .referral-code, .download-btn').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.classList.add('active');
+                });
+                
+                el.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('active');
+                });
+            });
+            
+            // Click animation
+            document.addEventListener('mousedown', () => {
+                cursor.classList.add('click');
+            });
+            
+            document.addEventListener('mouseup', () => {
+                cursor.classList.remove('click');
+            });
+            
+            // Animation on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            document.querySelectorAll('.step, .section-title').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Mobile menu toggle
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            menuBtn.addEventListener('click', () => {
+                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+                navLinks.classList.toggle('active');
+            });
+            
+            // Copy referral code with animation
+            const referralCode = document.getElementById('referralCode');
+            const copiedMessage = document.querySelector('.copied-message');
+            const toast = document.getElementById('toast');
+            
+            referralCode.addEventListener('click', () => {
+                const text = referralCode.textContent;
+                navigator.clipboard.writeText(text.trim());
+                
+                // Show copied message
+                copiedMessage.style.opacity = '1';
+                copiedMessage.style.top = '-50px';
+                
+                // Also show toast notification
+                toast.classList.add('show');
+                
+                setTimeout(() => {
+                    copiedMessage.style.opacity = '0';
+                    copiedMessage.style.top = '-40px';
+                    toast.classList.remove('show');
+                }, 3000);
+            });
+            
+            // Add hover effect to all images
+            const images = document.querySelectorAll('.step-image img');
+            images.forEach(img => {
+                img.addEventListener('mouseenter', () => {
+                    img.style.transform = 'scale(1.05) translateZ(30px)';
+                    img.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.15)';
+                });
+                
+                img.addEventListener('mouseleave', () => {
+                    img.style.transform = 'scale(1) translateZ(20px)';
+                    img.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+                });
+            });
+            
+            // Animate all interactive elements on hover
+            const interactiveElements = document.querySelectorAll('a, button, .step, .referral-code');
+            interactiveElements.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    el.style.transform = 'translateY(-5px)';
+                });
+                
+                el.addEventListener('mouseleave', () => {
+                    el.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
