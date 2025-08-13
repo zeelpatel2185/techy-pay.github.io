@@ -5,54 +5,450 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Services – Techy-Pay</title>
   <meta name="description" content="Discover the secure, fast and reliable payment solutions offered by Techy-Pay." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: sans-serif; line-height: 1.6; margin:0; padding:0; }
-    header, footer { background:#f8f8f8; padding:20px; text-align:center; }
-    nav a { margin: 0 10px; color: #333; text-decoration:none; }
-    main { padding: 20px; max-width: 800px; margin: auto; }
-    section { margin-bottom: 30px; }
-    h1, h2 { color: #004085; }
-    .service-list { list-style: disc inside; }
+    :root {
+      --primary-blue: #0066cc;
+      --dark-blue: #003366;
+      --light-blue: #e6f2ff;
+      --accent-blue: #0099ff;
+      --white: #ffffff;
+      --light-gray: #f8f9fa;
+      --medium-gray: #e9ecef;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: var(--white);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+      color: var(--white);
+      padding: 3rem 0 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" /></svg>');
+      background-size: cover;
+      animation: pulse 15s infinite alternate;
+    }
+    
+    @keyframes pulse {
+      0% { opacity: 0.1; }
+      100% { opacity: 0.3; }
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      animation: fadeInDown 1s ease-out;
+    }
+    
+    nav {
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      position: relative;
+    }
+    
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+    
+    nav a:hover {
+      color: var(--white);
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--white);
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    main {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    
+    section {
+      background-color: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 51, 102, 0.1);
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-left: 4px solid var(--primary-blue);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 51, 102, 0.15);
+    }
+    
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, rgba(0, 102, 204, 0.1) 0%, rgba(0, 102, 204, 0) 70%);
+      transform: translate(50px, -50px);
+    }
+    
+    h2 {
+      color: var(--primary-blue);
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: var(--accent-blue);
+      animation: underlineExpand 0.5s ease-out forwards;
+    }
+    
+    @keyframes underlineExpand {
+      from { width: 0; }
+      to { width: 50px; }
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    
+    .service-list {
+      list-style-type: none;
+      margin: 1.5rem 0;
+    }
+    
+    .service-list li {
+      padding: 0.75rem 0;
+      padding-left: 2.5rem;
+      position: relative;
+      font-size: 1.1rem;
+      border-bottom: 1px solid var(--medium-gray);
+      transition: all 0.3s ease;
+    }
+    
+    .service-list li:hover {
+      background-color: var(--light-blue);
+      transform: translateX(5px);
+    }
+    
+    .service-list li::before {
+      content: '\f054';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0.5rem;
+      top: 0.75rem;
+      color: var(--accent-blue);
+      font-size: 0.8rem;
+      transition: all 0.3s ease;
+    }
+    
+    .service-list li:hover::before {
+      transform: translateX(5px);
+      color: var(--primary-blue);
+    }
+    
+    strong {
+      color: var(--dark-blue);
+    }
+    
+    a {
+      color: var(--primary-blue);
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+    
+    a:hover {
+      color: var(--dark-blue);
+      text-decoration: underline;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--primary-blue), var(--accent-blue));
+      color: var(--white);
+      padding: 0.8rem 1.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 102, 204, 0.4);
+      text-decoration: none;
+    }
+    
+    .cta-button::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: rotate(30deg);
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover::after {
+      left: 100%;
+    }
+    
+    footer {
+      background-color: var(--dark-blue);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+    
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Feature icons */
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      
+      section {
+        padding: 1.5rem;
+      }
+      
+      main {
+        padding: 0 1rem;
+      }
+    }
+    
+    /* Floating animation for tech elements */
+    .tech-circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      animation: float 6s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+    
+    /* Service cards animation */
+    @keyframes serviceCardAppear {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Section specific animations */
+    section:nth-child(1) { animation: serviceCardAppear 0.6s ease-out 0.1s both; }
+    section:nth-child(2) { animation: serviceCardAppear 0.6s ease-out 0.3s both; }
+    section:nth-child(3) { animation: serviceCardAppear 0.6s ease-out 0.5s both; }
   </style>
 </head>
 <body>
   <header>
+    <!-- Animated tech circles -->
+    <div class="tech-circle" style="width: 100px; height: 100px; top: 20%; left: 10%;"></div>
+    <div class="tech-circle" style="width: 150px; height: 150px; bottom: 10%; right: 15%;"></div>
+    <div class="tech-circle" style="width: 80px; height: 80px; top: 40%; right: 20%;"></div>
+    
     <h1>Techy-Pay Services</h1>
     <nav>
-      <a href="/">Home</a> |
-      <a href="/about">About</a> |
-      <a href="/contact">Contact</a> |
-      <a href="/blog">Blog</a>
+      <a href="/"><i class="fas fa-home"></i> Home</a>
+      <a href="/about"><i class="fas fa-info-circle"></i> About</a>
+      <a href="/contact"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="/blog"><i class="fas fa-blog"></i> Blog</a>
     </nav>
   </header>
+  
   <main>
     <section>
-      <h2>Our Core Solutions</h2>
+      <h2><i class="fas fa-cubes feature-icon"></i> Our Core Solutions</h2>
       <p>At Techy-Pay, we offer a range of payment services designed to make transactions seamless, secure, and scalable for individuals and businesses.</p>
       <ul class="service-list">
-        <li><strong>Secure Wallet Payments:</strong> Effortless digital wallet integrations with high-level data encryption.</li>
-        <li><strong>UPI & Mobile Payments:</strong> Instant mobile and UPI-based payments with real-time confirmations.</li>
-        <li><strong>QR Code Payments:</strong> Quick scans and pay using QR codes — perfect for vendors and retail.</li>
-        <li><strong>Online Payment Gateway:</strong> Easy and customizable checkout system for websites and e-commerce.</li>
-        <li><strong>Subscription Billing:</strong> Automate recurring payments with flexible scheduling and reminders.</li>
+        <li><strong>Secure Wallet Payments:</strong> Effortless digital wallet integrations with high-level data encryption and multi-factor authentication.</li>
+        <li><strong>UPI & Mobile Payments:</strong> Instant mobile and UPI-based payments with real-time confirmations and transaction history.</li>
+        <li><strong>QR Code Payments:</strong> Quick scans and pay using QR codes — perfect for vendors and retail with customizable branding options.</li>
+        <li><strong>Online Payment Gateway:</strong> Easy and customizable checkout system for websites and e-commerce with 100+ payment method integrations.</li>
+        <li><strong>Subscription Billing:</strong> Automate recurring payments with flexible scheduling, reminders, and advanced analytics.</li>
+        <li><strong>International Payments:</strong> Accept and send payments globally with competitive exchange rates and low fees.</li>
       </ul>
     </section>
+    
     <section>
-      <h2>Why Choose Techy-Pay?</h2>
+      <h2><i class="fas fa-star feature-icon"></i> Why Choose Techy-Pay?</h2>
       <p>We pride ourselves on delivering solutions that are:</p>
       <ul class="service-list">
-        <li>Highly secure and PCI-compliant</li>
-        <li>Live 24×7 with reliable uptime</li>
-        <li>User-friendly dashboards and analytics</li>
+        <li><strong>Highly secure and PCI-compliant:</strong> Bank-level encryption and regular security audits</li>
+        <li><strong>Live 24×7 with reliable uptime:</strong> 99.9% uptime guarantee with instant failover</li>
+        <li><strong>User-friendly dashboards and analytics:</strong> Real-time reporting and customizable insights</li>
+        <li><strong>Scalable infrastructure:</strong> Grows with your business needs without performance issues</li>
+        <li><strong>Dedicated support:</strong> Personal account managers for enterprise clients</li>
       </ul>
+      <div style="background-color: var(--light-blue); padding: 1.5rem; border-radius: 6px; margin-top: 1.5rem;">
+        <h3 style="color: var(--dark-blue); margin-bottom: 1rem;"><i class="fas fa-chart-line"></i> Performance Metrics</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+          <div style="flex: 1; min-width: 150px; background: var(--white); padding: 1rem; border-radius: 6px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <div style="font-size: 2rem; color: var(--primary-blue); font-weight: bold;">99.9%</div>
+            <div>Uptime</div>
+          </div>
+          <div style="flex: 1; min-width: 150px; background: var(--white); padding: 1rem; border-radius: 6px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <div style="font-size: 2rem; color: var(--primary-blue); font-weight: bold;">1.2s</div>
+            <div>Avg. Processing</div>
+          </div>
+          <div style="flex: 1; min-width: 150px; background: var(--white); padding: 1rem; border-radius: 6px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <div style="font-size: 2rem; color: var(--primary-blue); font-weight: bold;">256-bit</div>
+            <div>Encryption</div>
+          </div>
+        </div>
+      </div>
     </section>
+    
     <section>
-      <h2>Get Started</h2>
-      <p>Ready to elevate your payment infrastructure? <a href="/contact">Contact us</a> to discuss your needs or request a demo today.</p>
+      <h2><i class="fas fa-rocket feature-icon"></i> Get Started</h2>
+      <p>Ready to elevate your payment infrastructure? Our team of payment experts can help you:</p>
+      <ul class="service-list">
+        <li>Integrate our API in as little as 1 business day</li>
+        <li>Migrate from your current provider with zero downtime</li>
+        <li>Customize solutions for your specific business needs</li>
+      </ul>
+      <p style="margin-top: 1.5rem;"><a href="/contact" class="cta-button">Request a Demo <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i></a></p>
     </section>
   </main>
+  
   <footer>
-    <p>&copy; 2025 Techy-Pay. All rights reserved.</p>
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 2rem;">
+      <p>&copy; 2025 Techy-Pay. All rights reserved.</p>
+      <div style="margin-top: 1.5rem;">
+        <a href="#" style="color: var(--white); margin: 0 0.5rem; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+        <a href="#" style="color: var(--white); margin: 0 0.5rem; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: var(--white); margin: 0 0.5rem; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+        <a href="#" style="color: var(--white); margin: 0 0.5rem; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: var(--white); margin: 0 0.5rem; font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Add some interactive animations
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animate service items when they come into view
+      const serviceItems = document.querySelectorAll('.service-list li');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateX(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      serviceItems.forEach((item, index) => {
+        item.style.opacity = 0;
+        item.style.transform = 'translateX(-20px)';
+        item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(item);
+      });
+      
+      // Add floating animation to tech circles
+      const circles = document.querySelectorAll('.tech-circle');
+      circles.forEach((circle, index) => {
+        circle.style.animationDelay = `${index * 2}s`;
+      });
+    });
+  </script>
 </body>
 </html>
